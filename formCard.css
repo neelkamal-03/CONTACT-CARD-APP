@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid rgb(0, 0, 0);
+  background: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 270px;
+  text-align: center;
+}
+.container .profile{
+    background-image: url(/bridge.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 130px;
+    
+}
+.container .profileimg{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+border: 2px solid #f3f3f3;
+margin-top: 110px;
+}
+
+
+/* Sean information */
+.Seaninfo{
+    margin-top: 30px;
+}
+.Seaninfo .Sean{
+    font-size: 18px;
+    font-weight: 100;
+}
+.Seaninfo .connect{
+    font-size: 14px;
+    color: rgb(87, 82, 82);
+    margin-top: -19px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Seaninfo .mcD{
+    font-size: 12px;
+    color: rgb(87, 82, 82);
+    margin-top: -17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}   
+
+.ExchangeInfo{
+    margin-top: 25px;
+}
+.ExchangeInfo .exchange{
+    font-size: 16px;
+    color: rgb(87, 82, 82);
+    margin-top: -17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Form Design */
+label{
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(87, 82, 82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 14px;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    text-align: left;
+    display: block;
+}
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  width: 90%;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}

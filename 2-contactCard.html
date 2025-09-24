@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="contactCard.css" />
+</head>
+<body>
+  <div class="container">
+     <div class="profile">
+            <p class="done" id="done">Done</p>
+            <ul class="doneBr" id="doneBr">
+                <li class="doner" id="doner">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </li>
+            </ul>
+            <hr>
+            <img src="/log.jpg" alt="Profile Picture" />
+            
+           <!-- Contact Info  -->
+           <div class="textInfo">
+            <P style="color: white; font-size: 11px;">BUSINESS DEVELOPMENT -MOBILE CARD</P>
+            <p style="color: white; font-size: 12px; margin-top: -4px;">SIM LINE <i class="fa-solid fa-sim-card"></i> 
+                Primary
+                </p>
+           <p class="Sean">Sean Samson</p>          
+          </div>
+    
+
+           <div class="info">
+              <ul class="uLicons" id="Ulicons">
+                 <li class="icons" id="icons">
+                    <a href="#"><i class="fa-solid fa-message fa-1x"></i> Message</a>
+                </li>
+
+                 <li class="icons" id="icons">
+                    <a href="#"><i class="fa-solid fa-phone fa-1x"></i><br>Call</a>
+                </li>
+
+                 <li class="icons" id="icons">
+                    <a href="#"><i class="fa-solid fa-mobile fa-1x"></i><br>Video</a>
+                </li>
+
+                 <li class="icons" id="icons">
+                    <a href="#"><i class="fa-solid fa-envelope fa-1x"></i><br>Mail</a>
+                </li>
+           </ul>
+
+        </div>
+    </div>
+ <div class="displayInfo">
+
+    <p class="mobileM"><strong>Mobile -</strong> <span style="margin-left: 5px;" id="displaynumber"></span></p>
+    <p class="emailE"><strong>Email -</strong> <span style="margin-left: 15px;" id="displayEmail"></span></p>
+    <p class="Dsplay"><strong>Name -</strong> <span style="margin-left: 12px;" id="displayName"></span></p>
+
+    <button><a href="/3-chatCard.html">Send Message</a></button>
+  </div>
+
+  <script>
+    document.getElementById("displaynumber").textContent = localStorage.getItem("number");
+    document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+    document.getElementById("displayName").textContent = localStorage.getItem("name");
+
+  </script>
+</body>
+</html>

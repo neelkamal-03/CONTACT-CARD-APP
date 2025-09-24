@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="formCard.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+        <img class="profileimg" src="/log.jpg" alt="Profile Image"/>
+    </div>
+           <div class="Seaninfo">
+               <p class="Sean">Sean Samson</p>
+               <p class="connect">Connecting the world</p>
+               <p class="mcD"><i class="fa-solid fa-sim-card"></i>Mcdonald's</p>
+            </div>
+            <div class="ExchangeInfo">
+                <p class="exchange">Exchange your Contact information with Sean Samson</p>
+            </div>
+   
+    <form onsubmit="handleLogin(event)">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="number">Phone Number</label>
+        <input type="number" id="number" placeholder="+91 " required />
+
+        <label for="text">Your name</label>
+        <input type="text" id="username" placeholder="{auto-fill}" required />
+
+      <button type="submit">Exchange Contacts</button>
+    </form>
+  
+
+</div>
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+      const number = document.getElementById("number").value;
+      const email = document.getElementById("email").value;
+      const name = document.getElementById("username").value;
+      localStorage.setItem("name", name);
+      localStorage.setItem("number", number);
+      localStorage.setItem("email", email);
+      window.location.href = "2-contactCard.html";
+    }
+  </script>
+</body>
+</html>
